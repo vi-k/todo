@@ -4,22 +4,22 @@ import 'package:todo/domain/models/repeat.dart';
 import 'package:todo/domain/models/todo.dart';
 import 'package:todo/domain/models/todo_status.dart';
 
-part 'todo_entity.freezed.dart';
-part 'todo_entity.g.dart';
+part 'todo_dto.freezed.dart';
+part 'todo_dto.g.dart';
 
 @freezed
-class TodoEntity with _$TodoEntity {
-  TodoEntity._();
+class TodoDto with _$TodoDto {
+  TodoDto._();
 
-  factory TodoEntity({
+  factory TodoDto({
     @JsonKey(name: 'id') required int id,
     @JsonKey(name: 'title') required String title,
     @JsonKey(name: 'due_on') required DateTime dueOn,
     @JsonKey(name: 'status') required TodoStatus status,
-  }) = _TodoEntity;
+  }) = _TodoDto;
 
-  factory TodoEntity.fromJson(Map<String, dynamic> json) =>
-      _$TodoEntityFromJson(json);
+  factory TodoDto.fromJson(Map<String, dynamic> json) =>
+      _$TodoDtoFromJson(json);
 
   Todo toTodo() => Todo(
         id: id,

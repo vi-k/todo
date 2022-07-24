@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:todo/data/entities/todo_entity.dart';
+import 'package:todo/data/dto/todo_dto.dart';
 import 'package:todo/domain/models/todo.dart';
 import 'package:todo/domain/models/todo_status.dart';
 import 'package:todo/domain/repositories/todos_repository.dart';
@@ -20,7 +20,7 @@ class ApiTodosRepository extends TodosRepository {
 
       return List<Todo>.unmodifiable(
         response.data!.map<Todo>((dynamic e) =>
-            TodoEntity.fromJson(e as Map<String, dynamic>).toTodo()),
+            TodoDto.fromJson(e as Map<String, dynamic>).toTodo()),
       );
     } on DioError catch (error, stackTrace) {
       Error.throwWithStackTrace(

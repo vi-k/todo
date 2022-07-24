@@ -27,5 +27,5 @@ void main() {
 
 Future<void> appInit() async {
   // Имитация инициализации.
-  await Future<void>.delayed(const Duration(seconds: 1));
+  await Future<void>.delayed(const Duration(seconds: 2));
 }

@@ -271,15 +271,19 @@ class _Todos extends StatelessWidget {
           valueListenable: screenState.searchNotifier,
           builder: (_, search, __) {
             var todos = state.whenOrNull(data: (todos) => todos)!;
-            todos =
-                screenState.filter(todos, todoFilter, showSearch ? search : '');
+            final s = showSearch ? search : '';
+            todos = screenState.filter(
+              todos,
+              todoFilter,
+              s,
+            );
 
             return ListView.builder(
               itemCount: todos.length,
               itemBuilder: (context, index) => TodoTile(
                 todos[index],
                 key: ValueKey(todos[index].id),
-                search: search,
+                search: s,
               ),
             );
           },

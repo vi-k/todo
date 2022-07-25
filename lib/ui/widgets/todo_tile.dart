@@ -5,6 +5,11 @@ import 'package:todo/ui/pages/todo_page.dart';
 import 'package:todo/ui/utils/navigator.dart';
 import 'package:todo/ui/widgets/todo_status_marker.dart';
 
+class _Values {
+  static const double horizontalDivider = 10;
+  static const double verticalPadding = 15;
+}
+
 class TodoTile extends StatefulWidget {
   const TodoTile(
     this.todo, {
@@ -93,21 +98,31 @@ class _TodoTileState extends State<TodoTile> {
   }
 
   @override
-  Widget build(BuildContext context) => ListTile(
-        title: Text.rich(
-          TextSpan(children: _spans),
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-        ),
-        leading: TodoStatusMarker(widget.todo.status),
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: AppValues.horizontalPadding,
-        ),
-        horizontalTitleGap: 10,
-        minLeadingWidth: AppValues.todoStatusMarkerSize,
+  Widget build(BuildContext context) => InkWell(
         onTap: () => appNavigatorPush<void>(
           context,
           () => TodoPage.screen(initialTodo: widget.todo),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppValues.horizontalPadding,
+            vertical: _Values.verticalPadding,
+          ),
+          child: Row(
+            children: [
+              TodoStatusMarker(widget.todo.status),
+              const SizedBox(
+                width: _Values.horizontalDivider,
+              ),
+              Expanded(
+                child: Text.rich(
+                  TextSpan(children: _spans),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ],
+          ),
         ),
       );
 }

@@ -39,7 +39,78 @@
 Пример данных:
 
 ```
-[{"id":1585,"user_id":3217,"title":"Modi quis baiulus creber peccatus culpa ulterius.","due_on":"2022-08-22T00:00:00.000+05:30","status":"pending"},{"id":1584,"user_id":3214,"title":"Spectaculum causa tracto arcus aut adinventitias vallum decipio verumtamen.","due_on":"2022-07-28T00:00:00.000+05:30","status":"completed"},{"id":1583,"user_id":3213,"title":"Defluo volubilis suppono sint nesciunt quos textus ullus cito.","due_on":"2022-08-18T00:00:00.000+05:30","status":"completed"},{"id":1582,"user_id":3212,"title":"Adultus aperte decerno facilis somniculosus angulus solutio peior curriculum substantia.","due_on":"2022-08-17T00:00:00.000+05:30","status":"completed"},{"id":1580,"user_id":3209,"title":"Sum neque crepusculum cur comburo cultellus apparatus coma mollitia umerus vel.","due_on":"2022-08-21T00:00:00.000+05:30","status":"completed"},{"id":1579,"user_id":3208,"title":"Pectus cubitum causa tripudio aut.","due_on":"2022-08-12T00:00:00.000+05:30","status":"pending"},{"id":1578,"user_id":3207,"title":"Non atrox spes defendo dolorem fugit.","due_on":"2022-08-22T00:00:00.000+05:30","status":"completed"},{"id":1577,"user_id":3203,"title":"Quae carbo tero aestus numquam.","due_on":"2022-07-27T00:00:00.000+05:30","status":"completed"},{"id":1576,"user_id":3201,"title":"Basium tego venia avoco abscido reiciendis corpus tactus animi.","due_on":"2022-08-11T00:00:00.000+05:30","status":"completed"},{"id":1575,"user_id":3200,"title":"Adsuesco sursum repellendus cohaero sui volva spargo coniuratio eos synagoga error.","due_on":"2022-08-20T00:00:00.000+05:30","status":"completed"}]
+[
+  {
+    "id": 1585,
+    "user_id": 3217,
+    "title": "Modi quis baiulus creber peccatus culpa ulterius.",
+    "due_on": "2022-08-22T00:00:00.000+05:30",
+    "status": "pending"
+  },
+  {
+    "id": 1584,
+    "user_id": 3214,
+    "title": "Spectaculum causa tracto arcus aut adinventitias vallum decipio verumtamen.",
+    "due_on": "2022-07-28T00:00:00.000+05:30",
+    "status": "completed"
+  },
+  {
+    "id": 1583,
+    "user_id": 3213,
+    "title": "Defluo volubilis suppono sint nesciunt quos textus ullus cito.",
+    "due_on": "2022-08-18T00:00:00.000+05:30",
+    "status": "completed"
+  },
+  {
+    "id": 1582,
+    "user_id": 3212,
+    "title": "Adultus aperte decerno facilis somniculosus angulus solutio peior curriculum substantia.",
+    "due_on": "2022-08-17T00:00:00.000+05:30",
+    "status": "completed"
+  },
+  {
+    "id": 1580,
+    "user_id": 3209,
+    "title": "Sum neque crepusculum cur comburo cultellus apparatus coma mollitia umerus vel.",
+    "due_on": "2022-08-21T00:00:00.000+05:30",
+    "status": "completed"
+  },
+  {
+    "id": 1579,
+    "user_id": 3208,
+    "title": "Pectus cubitum causa tripudio aut.",
+    "due_on": "2022-08-12T00:00:00.000+05:30",
+    "status": "pending"
+  },
+  {
+    "id": 1578,
+    "user_id": 3207,
+    "title": "Non atrox spes defendo dolorem fugit.",
+    "due_on": "2022-08-22T00:00:00.000+05:30",
+    "status": "completed"
+  },
+  {
+    "id": 1577,
+    "user_id": 3203,
+    "title": "Quae carbo tero aestus numquam.",
+    "due_on": "2022-07-27T00:00:00.000+05:30",
+    "status": "completed"
+  },
+  {
+    "id": 1576,
+    "user_id": 3201,
+    "title": "Basium tego venia avoco abscido reiciendis corpus tactus animi.",
+    "due_on": "2022-08-11T00:00:00.000+05:30",
+    "status": "completed"
+  },
+  {
+    "id": 1575,
+    "user_id": 3200,
+    "title": "Adsuesco sursum repellendus cohaero sui volva spargo coniuratio eos synagoga error.",
+    "due_on": "2022-08-20T00:00:00.000+05:30",
+    "status": "completed"
+  }
+]
 ```
 
 Захотелось сделать как на картинке, поэтому добавил данные.

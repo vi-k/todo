@@ -153,5 +153,10 @@
 
 Даилоги выбора даты и времени меняются в зависимости от платформы (Cupertion/Material).
 
+<img src="https://img.youtube.com/vi/4qumgY6w2Ko/maxresdefault.jpg" width="50%">
+
 [<img src="https://img.youtube.com/vi/4qumgY6w2Ko/maxresdefault.jpg" width="50%">](https://youtu.be/4qumgY6w2Ko)
+[<img src="https://img.youtube.com/vi/4qumgY6w2Ko/maxresdefault.jpg" width="50%">](https://www.youtube.com/embed/4qumgY6w2Ko)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4qumgY6w2Ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

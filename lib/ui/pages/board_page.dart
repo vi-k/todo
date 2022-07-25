@@ -93,8 +93,8 @@ class _BoardPageState extends State<BoardPage>
     if (search.isNotEmpty) {
       final words = search.toLowerCase().split(' ');
 
-      filteredTodos = filteredTodos.where((todo) =>
-          words.every((word) => todo.title.toLowerCase().contains(word)));
+      filteredTodos = filteredTodos.where((todo) => words.any((word) =>
+          word.isNotEmpty && todo.title.toLowerCase().contains(word)));
     }
 
     return List.unmodifiable(filteredTodos);

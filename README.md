@@ -153,4 +153,5 @@
 
 Даилоги выбора даты и времени меняются в зависимости от платформы (Cupertion/Material).
 
-https://github.com/vi-k/todo/blob/main/README-video.mp4
+<iframe width="400" height="800" src="https://www.youtube.com/embed/4qumgY6w2Ko" frameborder="0" allowfullscreen></iframe>
+

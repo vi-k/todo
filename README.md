@@ -151,6 +151,6 @@
 
 Собственная реализация выпадающего списка для соответствия общему дизайну.
 
-Даилоги выбора даты и времени меняются в зависимости от платформы (Cupertion/Material).
+Диалоги выбора даты и времени меняются в зависимости от платформы (Cupertino/Material).
 
 [<img src="https://img.youtube.com/vi/4qumgY6w2Ko/maxresdefault.jpg" width="50%">](https://youtu.be/4qumgY6w2Ko)

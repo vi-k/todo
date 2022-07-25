@@ -74,9 +74,12 @@ class _TodoPageState extends State<TodoPage> {
         TextEditingController(text: DateFormat.yMd().format(startTime));
     startTimeController =
         TextEditingController(text: DateFormat.Hm().format(startTime));
-    endTimeController = TextEditingController();
-    remindNotifier = ValueNotifier(Remind.never);
-    repeatNotifier = ValueNotifier(Repeat.never);
+    endTimeController = TextEditingController(
+        text: todo?.endTime == null
+            ? ''
+            : DateFormat.Hm().format(todo!.endTime!));
+    remindNotifier = ValueNotifier(todo?.remind ?? Remind.never);
+    repeatNotifier = ValueNotifier(todo?.repeat ?? Repeat.never);
   }
 
   @override
